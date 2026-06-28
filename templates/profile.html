@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<title>
+Profile
+</title>
+
+
+<link rel="stylesheet"
+href="{{url_for('static',filename='style.css')}}">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="dashboard">
+
+
+<div class="sidebar">
+
+
+<h2>
+🔐 Secure
+</h2>
+
+
+<a href="/dashboard">
+
+🏠 Dashboard
+
+</a>
+
+
+
+<a class="active">
+
+👤 Profile
+
+</a>
+
+
+
+<a href="/security">
+
+🛡 Security
+
+</a>
+
+
+
+<a href="/logout">
+
+🚪 Logout
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="main">
+
+
+<h1>
+Profile
+</h1>
+
+
+
+
+<div class="profile-card">
+
+
+<h2>
+User Information
+</h2>
+
+
+
+<p>
+
+<strong>
+Username:
+</strong>
+
+{{user.username}}
+
+</p>
+
+
+
+
+<p>
+
+<strong>
+Email:
+</strong>
+
+{{user.email}}
+
+</p>
+
+
+
+
+<p>
+
+<strong>
+Account Status:
+</strong>
+
+Active
+
+</p>
+
+
+
+
+<p>
+
+<strong>
+Authentication:
+</strong>
+
+Protected
+
+</p>
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+</body>
+
+
+</html>

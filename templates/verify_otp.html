@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>
+OTP Verification
+</title>
+
+
+<link rel="stylesheet"
+href="{{url_for('static',filename='style.css')}}">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="container">
+
+
+<div class="logo">
+
+🔢
+
+</div>
+
+
+<h1>
+Verify OTP
+</h1>
+
+
+
+<p>
+Enter the OTP shown in the terminal.
+</p>
+
+
+
+
+{% with messages = get_flashed_messages() %}
+
+{% if messages %}
+
+{% for message in messages %}
+
+<div class="alert">
+
+{{message}}
+
+</div>
+
+{% endfor %}
+
+{% endif %}
+
+{% endwith %}
+
+
+
+
+<form method="POST">
+
+
+<input
+
+type="number"
+
+name="otp"
+
+placeholder="Enter OTP"
+
+required>
+
+
+
+<button>
+
+Verify OTP
+
+</button>
+
+
+</form>
+
+
+
+</div>
+
+
+</body>
+
+
+</html>

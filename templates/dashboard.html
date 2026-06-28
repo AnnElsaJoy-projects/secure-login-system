@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<title>
+Dashboard
+</title>
+
+
+<link rel="stylesheet"
+href="{{url_for('static',filename='style.css')}}">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="dashboard">
+
+
+
+<div class="sidebar">
+
+
+<h2>
+🔐 Secure
+</h2>
+
+
+<a href="/dashboard" class="active">
+
+🏠 Dashboard
+
+</a>
+
+
+<a href="/profile">
+
+👤 Profile
+
+</a>
+
+
+<a href="/security">
+
+🛡 Security
+
+</a>
+
+
+
+<a href="#">
+
+⚙ Settings
+
+</a>
+
+
+
+<a href="/logout">
+
+🚪 Logout
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="main">
+
+
+
+<h1>
+Dashboard
+</h1>
+
+
+<h3>
+Welcome {{username}} 👋
+</h3>
+
+
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+
+<h3>
+Security Score
+</h3>
+
+
+<h1>
+98%
+</h1>
+
+
+<p>
+Excellent
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Login Activity
+</h3>
+
+
+<h1>
+12
+</h1>
+
+
+<p>
+This Week
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Account Status
+</h3>
+
+
+<h1>
+Secure
+</h1>
+
+
+<p>
+Protected
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+<div class="activity">
+
+
+<h2>
+Recent Activity
+</h2>
+
+
+
+<p>
+✅ Successful Login
+</p>
+
+
+
+<p>
+🔐 Password encrypted using bcrypt
+</p>
+
+
+
+<p>
+🔢 Two Factor Authentication Enabled
+</p>
+
+
+
+<p>
+🛡 Secure Session Active
+</p>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+</body>
+
+
+</html>

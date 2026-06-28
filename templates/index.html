@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Secure Login System</title>
+
+<link rel="stylesheet"
+href="{{url_for('static',filename='style.css')}}">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<div class="logo">
+🔐
+</div>
+
+
+<h1>
+Secure Login System
+</h1>
+
+
+<p>
+A secure authentication system with encrypted passwords,
+OTP verification and protected sessions.
+</p>
+
+
+
+{% with messages = get_flashed_messages() %}
+
+{% if messages %}
+
+{% for message in messages %}
+
+<div class="alert">
+{{message}}
+</div>
+
+{% endfor %}
+
+{% endif %}
+
+{% endwith %}
+
+
+
+
+
+<div class="button-area">
+
+
+<a href="/register">
+
+<button>
+Create Account
+</button>
+
+</a>
+
+
+
+<a href="/login">
+
+<button>
+Login
+</button>
+
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="features">
+
+
+<div>
+
+🔒
+
+<p>
+Encrypted Password
+</p>
+
+</div>
+
+
+
+<div>
+
+🛡️
+
+<p>
+Secure Sessions
+</p>
+
+</div>
+
+
+
+<div>
+
+🔢
+
+<p>
+OTP Protection
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</body>
+
+
+</html>
