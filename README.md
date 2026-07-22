@@ -24,4 +24,4 @@ A simple and secure authentication system built using modern web development pra
 
 ---
 
-## 📂 Project Structure
+
